@@ -26,7 +26,9 @@ export const registrarProfesor = async (datos) => {
     password: passwordHasheada,
   })
   const token = firmarToken(profesor._id, 'profesor')
-  return { token, profesor: profesor.toObject() }
+  const profesorObj = profesor.toObject()
+  delete profesorObj.password
+  return { token, profesor: profesorObj }
 }
 
 // TODO: registra un alumno (igual que el profesor).
@@ -40,7 +42,9 @@ export const registrarAlumno = async (datos) => {
     password: passwordHasheada,
   })
   const token = firmarToken(alumno._id, 'alumno')
-  return { token, alumno: alumno.toObject() }
+  const alumnoObj = alumno.toObject()
+  delete alumnoObj.password
+  return { token, alumno: alumnoObj }
 }
 
 // TODO: login.
