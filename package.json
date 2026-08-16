@@ -10,9 +10,22 @@
   },
   "dependencies": {
     "bcryptjs": "^3.0.3",
-    "cors": "^2.8.5",
-    "express": "^4.21.2",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^4.22.2",
     "jsonwebtoken": "^9.0.3",
-    "mongoose": "^9.7.4"
-  }
+    "mongoose": "^9.7.4",
+    "moongo": "^0.2.1",
+    "yarn": "^1.22.22"
+  },
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryasud-sketch/IPSS-DIPLOMADO-CURSO3-Evaluacion-Final.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/ryasud-sketch/IPSS-DIPLOMADO-CURSO3-Evaluacion-Final/issues"
+  },
+  "homepage": "https://github.com/ryasud-sketch/IPSS-DIPLOMADO-CURSO3-Evaluacion-Final#readme"
 }
